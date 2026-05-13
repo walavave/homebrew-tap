@@ -1,8 +1,8 @@
 class TrashCli < Formula
   desc "Native macOS trash CLI implemented in Rust"
   homepage "https://github.com/walavave/trash-cli"
-  url "https://github.com/walavave/trash-cli/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "069895a6863d7adc309a91d65d07d5f9ef61c85e2050ab4d014aaff2c28aead9"
+  url "https://github.com/walavave/trash-cli/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "bc7d04caf0b8a79a15ec4d33fef3c464b931d75602749a9c5cb4f9d33cf26057"
   license "MIT"
 
   depends_on "rust" => :build
@@ -12,6 +12,6 @@ class TrashCli < Formula
   end
 
   test do
-    assert_match "0.0.1", shell_output("#{bin}/trash --version")
+    assert_match "0.0.2", shell_output("#{bin}/trash --version")
   end
 end
